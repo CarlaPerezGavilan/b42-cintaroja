@@ -6,10 +6,12 @@ class Pelicula extends Largometraje {
         super(name, duration, year, tipo);
         this.director = director;
         this.scriptwritter = scriptwritter;
+        this.rating = 'A';
     }
 
-    obtenerDuracion(){
-        return this.duration;
+    changeRating(rating){
+        this.rating = rating;
+        return `Changed rating to: ${this.rating}`;
     }
 
 }
