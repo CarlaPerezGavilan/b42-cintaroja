@@ -11,6 +11,7 @@ class Largometraje {
 
     store(){
         this.published = false;
+        return `changed to: ${this.published} `;
     }
 
 }

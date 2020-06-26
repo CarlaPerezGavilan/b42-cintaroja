@@ -1,12 +1,12 @@
 const { Largometraje } = require('./Largometraje');
 
 class Cine {
-    constructor() {
-
+    constructor(name) {
+        this.name = name;
     }
     reproducir(largometraje){
         const {name} = largometraje;
-        return `Reproduciendo ${name} en el cine`
+        return `Reproduciendo ${name} en el cine ${this.name}`
     }
 }
 
